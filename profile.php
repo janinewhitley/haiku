@@ -18,7 +18,7 @@
         $error = "";
 
         // write query for all haikus
-        $stmt = $pdo->query('SELECT * FROM haikus ORDER BY haiku_id DESC');
+        $stmt = $this->pdo->query('SELECT * FROM haikus ORDER BY haiku_id DESC');
 
         $haikus = $stmt->fetchAll();
 
